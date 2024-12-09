@@ -1,5 +1,6 @@
 from flask import Flask,render_template, send_from_directory, request
-
+from flask_mail import Mail, Message    # pip install Flask-Mail
+import os
 
 app=Flask(__name__)
 
@@ -64,6 +65,19 @@ def home():
     return render_template('Van.html')
 
 
+mail_settings = {
+     "MAIL_SERVER": 'smtp.gmail.com',
+     "MAIL_PORT": 587,
+     "MAIL_USE_TLS": True,
+     "MAIL_USE_SSL": False,
+     "MAIL_USERNAME": "bdsenpc0@gmail.com",
+     "MAIL_PASSWORD": "agjw khqp ittb nkxx"
+}
+
+app.config.update(mail_settings)
+mail = Mail(app)
+
+full_message=''
 @app.route('/Van_page2.html')
 def greet():
     nom = request.args.get('nom', '')
@@ -92,7 +106,22 @@ def greet():
     else:
         msg2 = "Il n'y a pas de remarque particulière"
 
+    send_email(nom, msg, msg2)
     return render_template('Van_page2.html').format(nom, msg, msg2)
+
+
+def send_email(nom, msg, msg2):
+    email_content = render_template('Van_envoie_mail.html', nom=nom, msg=msg, msg2=msg2)
+    
+    msg = Message(subject= "Demande d'emprunt de van",
+                  sender="bdsenpc0@gmail.com",
+                  recipients=["teulon99@gmail.com"],
+                  html=email_content)
+
+    with app.app_context():
+        mail.send(msg)
+
+    print("Email envoyé")
 
 
 if __name__=="__main__":
