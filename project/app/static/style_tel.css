@@ -1,0 +1,269 @@
+/* Styles pour les téléphones et tablettes */
+@media screen and (max-width: 1024px) {
+    /* Corps de la page */
+    body {
+        font-size: 14px; /* Taille de texte adaptée */
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Empêche le débordement horizontal */
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background-image: url("../static/img/fond/marbre_blanc.png"); /* Fond */
+    }
+
+    /* Global: Inclure padding et bordures dans la largeur */
+    * {
+        box-sizing: border-box;
+    }
+
+    /* Navigation */
+    nav {
+        display: flex;
+        flex-direction: column; /* Navigation verticale */
+        align-items: center;
+        width: 100%; /* Navigation sur toute la largeur */
+        padding: 10px 0;
+        background-color: black;
+    }
+
+    nav ul {
+        width: 100%; /* Assure une largeur complète */
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+        display: block;
+        width: 100%; /* Évite les débordements */
+    }
+
+    .logo {
+        max-width: 15%; /* Taille du logo réduite pour mobile */
+        height: auto;
+        margin-bottom: 15px;
+    }
+
+    /* Bannières */
+    .banniere {
+        height: 300px; /* Hauteur réduite */
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+        width: 100%; /* Ajuste la largeur */
+    }
+
+    .titre-banniere {
+        font-size: 1.5em;
+        text-align: center;
+        padding: 5px;
+        color: white;
+    }
+
+    /* Contenus */
+    .content {
+        width: 100%; /* Contenu centré et ajusté */
+        margin: 0 auto;
+        padding: 5%;
+        text-align: center;
+    }
+    .section_clubs{
+    max-width: 100%;
+    margin-left:10%;
+    }
+    .contenant_clubs{
+    width: 20%;
+    height: auto;
+    }
+    .contenant_clubs img{
+    width: 100%;
+    height: auto;
+    }
+    .contenant_clubs p{
+    width: 100%;
+    font-size: 14px;
+    }
+
+    /* Images */
+    img {
+        max-width: 100%; /* Évite les débordements horizontaux */
+        height: auto;
+        display: block;
+        margin: 10px auto; /* Centre les images */
+    }
+
+    .centered-image {
+        max-width: 90%; /* Largeur ajustée */
+        margin: 10px auto;
+    }
+
+    /* Galeries */
+    .galerie_club {
+        display: flex;
+        margin-left: 5%;
+        width: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    /* Sections encadrées */
+    div[style*="border: 5px solid pink"] {
+        width: 90%; /* Conteneur réduit pour éviter les débordements */
+        margin: 10px auto;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* Boutons */
+    .bouton_clique {
+        width: 80%; /* Bouton ajusté pour mobile */
+        margin: 10px auto;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 10px;
+        background: linear-gradient(to left, pink 50%, #2309e6 50%) right;
+        background-size: 200%;
+        color: white;
+        border: none;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .bouton_clique:hover {
+        background-position: left;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 10px;
+        font-size: 12px; /* Réduction du texte */
+        background-color: black;
+        color: white;
+    }
+
+    .section_reseau {
+        display: flex;
+        flex-direction: column; /* Icônes empilées */
+        align-items: center;
+        width: 100%;
+    }
+
+    .section_reseau img {
+        max-width: 30px; /* Taille ajustée des icônes */
+        margin: 5px;
+    }
+
+    /* Partenaires */
+    .partner_img_left, .partner_img_right {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .partner_img_left img, .partner_img_right img {
+        max-width: 80%; /* Largeur ajustée des images partenaires */
+        margin: 10px auto;
+    }
+
+    .partner_img_left p, .partner_img_right p {
+        font-size: 14px;
+        margin: 10px auto;
+        text-align: center;
+    }
+
+
+/* affiches de ski*/
+    .img_affiche_ski_gauche{
+width: 30%;
+margin-left: 10%;
+}
+.img_affiche_ski_droite{
+width: 30%;
+margin-left: 10%;
+}
+
+
+/*Page Contacts (logos et texte) */
+.contenant_contact{
+    position: flex;
+    display: flex;
+    flex-direction : column;
+    text-align : center;
+    align-items : center;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.contenant_contact img{
+    width: 10vh;
+    height: auto;
+}
+
+.contenant_contact p{
+    font-size: 14px;
+    width: 20%;
+}
+
+.encadres_club{
+border: 5px solid pink;
+background color: pink;
+max-width: 50%;
+margin: auto;
+text-align: center;
+margin-top: 5%;
+}
+.encadres_club p{
+    font-size: 5px;
+}
+
+
+/* Correction globale */
+* {
+    margin: 0; /* Supprime les marges globales */
+    padding: 0; /* Supprime les paddings globaux */
+    box-sizing: border-box; /* Inclut padding et bordures dans la largeur */
+}
+
+/* Assure qu'aucun débordement horizontal ne se produit */
+html, body {
+    max-width: 100%; /* Empêche les débordements */
+    overflow-x: hidden; /* Supprime le défilement horizontal */
+}
+
+/* Force les images ou éléments problématiques à respecter la largeur de l'écran */
+img, video, iframe, .content{
+    max-width: 100%; /* Ne dépasse jamais 100% de la largeur de l’écran */
+    height: auto;
+}
+
+/* Navigation */
+nav {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Footer et sections */
+footer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+/* Bannières et overlays */
+.banniere, .overlay {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+}
+
+
+

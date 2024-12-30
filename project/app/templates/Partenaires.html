@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title class="”Classe1”">BDS ENPC</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_ordi.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_tel.css') }}">
+    <link rel="icon" href="static/img/logo/logo_BDS_transparent.png">
+  </head>
+<body>
+<!--Barre de navigation-->
+    <nav>
+      <img src="{{ url_for('static', filename='img/logo/logo_BDS_transparent.png') }}" class="logo">
+      <ul>
+        <li><a href="/Accueil.html">Accueil</a></li>
+        <li class="dropdown">
+            <a href="/Les sports aux ponts.html" class="dropdown-toggle">Les sports aux ponts</a>
+            <ul class="dropdown-menu">
+                <li><a href="/club/Pompims.html">Pompims</a></li>
+                <li><a href="/club/Rock.html">Rock</a></li>
+                <li><a href="/club/Voile.html">Voile</a></li>
+                <li><a href="/club/Aviron.html">Aviron</a></li>
+                <li><a href="/club/Course.html">Course</a></li>
+                <li><a href="/club/Escalade.html">Escalade</a></li>
+                <li><a href="/club/Micro Aventure.html">Micro Aventure</a></li>
+                <li><a href="/club/Ultra.html">Ultra</a></li>
+                <li><a href="/club/Rugbyx.html">Rugbyx</a></li>
+            </ul>
+          <li><a href="/Van.html">Réservation de van</a></li>
+          <li><a href="/Mandats.html">Mandats</a></li>
+        <li><a href="/Partenaires.html">Partenaires</a></li>
+        <li><a href="/Contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+
+
+
+
+
+
+<div class="banniere">
+     <div class="overlay"></div>
+    <h1 class="titre-banniere" >Partenaires</h1>
+</div>
+
+<!--partenariats-->
+    <div id="Partenaires" class="partner-section">
+            <div class="partner_img_left">
+                <img src="{{ url_for('static', filename='img/partenariats/logo-enpc.png') }}" alt="Partenaire 1">
+                <p>L’École des Ponts ParisTech (École Nationale des Ponts et Chaussées)
+                  est notre premier partenaire, autant sur le plan financier que sur le plan institutionnel.
+                  L’École nous fait confiance depuis la création du Bureau des Sports, et nous laisse une liberté nous permettant
+                  d’entreprendre nos projets comme nous les imaginons.</p>
+            </div>
+            <div style="padding-top : 0%; padding-bottom:2%">
+                <a class="bouton_clique" href="https://ecoledesponts.fr/" target="_blank">
+                Site de l'école Ponts IP Paris
+                </a>
+
+            </div>
+
+
+<hr class="custom-hr">
+
+            <div class="partner_img_right" style="padding-top : 5%; padding-bottom:0%">
+                <p>Le BDS est en partenariat avec la BNP Paribas depuis maintenant des années. Cette banque nous apporte
+                  un grand soutient financier mais pas seulement, comme par exemple des places gratuites pour le Masters de Paris-Bercy.
+                  Pour l’ouverture d’un compte BNP, les étudiants reçoivent 80 euros et bénéficient de nombreux avantages.</p>
+                <img src="{{ url_for('static', filename='img/partenariats/BNP_Paribas_(1).png') }}" alt="Partenaire 2">
+            </div>
+            <div style="padding-top : 0%; padding-bottom:2%">
+            <a class="bouton_clique" href="https://mesavantages.bnpparibas/partenaire/79723.ecole-des-ponts-paristech" target="_blank">
+            Clique ici pour voir nos avantages !
+            </a>
+
+            </div>
+
+<hr class="custom-hr">
+
+            <div class="partner_img_left" style="padding-top : 5%; padding-bottom:0%">
+                <img src="{{ url_for('static', filename='img/partenariats/logoEurofins.png') }}" alt="Partenaire 3">
+                <p class="text"> Le Bureau des Sports est fier d’avoir signé fin 2021 un partenariat avec Eurofins,
+                  ce qui fait de ce groupe un support important pour le bureau.
+                  Eurofins est alors devenu le sponsor exclusif de notre excellente équipe masculine de foot. </p>
+            </div>
+            <div style="padding-top : 0%; padding-bottom:0%">
+                <a class="bouton_clique" href="https://careers.eurofins.com/students-and-graduates/" target="_blank">
+                espace recrutement Eurofins
+                </a>
+                <hr class="custom-hr">
+            </div>
+
+            <div class="partner_img_right"  style="padding-top : 5%; padding-bottom:0%">
+                <p>Lydia est un partenaire important du BDS, qui nous accompagne au quotidien. C’est devenu une application
+                  incontournable utilisée de tous et pour cela
+                  il est très intéressant pour nous d’avoir une relation privilégiée avec cette entreprise. </p>
+                <img class="fuze_tea" src="{{ url_for('static', filename='img/partenariats/LYDIA.png') }}" alt="Partenaire 4">
+            </div>
+            <!-- Ajoutez d'autres partenaires selon vos besoins -->
+
+    </div>
+
+<!-- mentions légales en bas de page -->
+  <div class="section" style="padding-top : 4%; padding-bottom:0%">
+      <div class="section_reseau">
+       <div class="contenant_reseau" style="width: 40vh; margin-left: 10vh">
+           <h1>Mentions légales</h1>
+           <p>AS DE L ENPC, Association déclarée. 6 Avenue Blaise Pascal - 77420 Champs sur marne.
+           </p>
+       </div>
+
+          <div class="contenant_reseau" style="width: 60vh">
+           <h1>Nos réseaux</h1>
+              <div class="section_reseaux" style="display: flex">
+            <a style="text-decoration : none" href="https://www.instagram.com/bds.enpc/" target="_blank">
+          <img class="insta" src="static/img/Reseaux/InstaB.png">
+           </a>
+
+
+         <a style="text-decoration : none" href="https://www.facebook.com/bds.ecoledesponts" target="_blank">
+          <img class="facebook" src="static/img/Reseaux/FbB.png">
+        </a>
+
+
+        <a style="text-decoration : none" href="mailto:bds.enpc@gmail.com" target="_blank">
+          <img class="mail" src="static/img/Reseaux/mailbb.png">
+          </a>
+
+                  </div>
+       </div>
+
+          <div class="contenant_reseau" style="width: 40vh">
+           <h1>Le bureau des Sports</h1>
+            <p> Les Bureau des Sports veille au bon déroulement du sport interne à l'École, mais organise surtout
+              les évènement sportifs rythmant l'année des étudiants. </p>
+       </div>
+
+          <div class="contenant_reseau">
+           <h1>Liens utiles</h1>
+
+
+              <ul style="list-style-type: none; padding-left: 0; margin-bottom: 50px; margin-left: 50px;">
+    <li style="display: flex; align-items: flex-start;"><span style="width: 15px; text-align: center; margin-right: 5px;">
+    </span> <a href="https://ecoledesponts.fr/" style="color:  red"> école des Ponts </a></li>
+                  <hr>
+    <li style="display: flex; align-items: flex-start;"><span style="width: 15px; text-align: center; margin-right: 5px;">
+    </span> <a href="https://www.fondationdesponts.fr/" style="color:  red"> fondation des Ponts </a></li>
+                  <hr>
+    <li style="display: flex; align-items: flex-start;"><span style="width: 15px; text-align: center; margin-right: 5px;">
+    </span> <a href="https://www.ponts.org/fr/" style="color:  red"> Ponts Alumni</a></li>
+                  <hr>
+    <li style="display: flex; align-items: flex-start;"><span style="width: 15px; text-align: center; margin-right: 5px;">
+    </span> <a href="https://www.ip-paris.fr/" style="color:  red"> Institut Polytechnique de Paris </a> </li>
+                  <hr>
+    </ul>
+       </div>
+
+          </div>
+    </div>
+
+<footer>
+    <p>
+        Copyright © 2020 - All Rights Reserved - bds.enpc.org
+    </p>
+
+  </footer>
+</body>
+</html>

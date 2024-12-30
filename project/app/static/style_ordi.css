@@ -1,0 +1,539 @@
+/* Réglages pour toutes les pages*/
+
+body {
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: url("../static/img/fond/marbre_blanc.png"); /*Image de fond*/
+}
+
+h1{
+  color : black;
+  text-align: center;
+  align-content : center;
+  padding : 0;
+  margin-top : 3%;
+  font-size: 3vw ;
+}
+
+.custom-hr {
+    border: 0;
+    height: 5px; /* Augmentez l'épaisseur de la ligne */
+    width: 5%;   /* Définissez la largeur de la ligne */
+    background: #2309e6;  /* Changez la couleur selon vos préférences */
+    margin-bottom: 5%;
+}
+
+.commentaires{
+  text-align : center;
+  align-content : center;
+  color : rgb(57, 56, 56);
+  font-size : 2vw;
+  font-style : italic;
+}
+
+footer{
+  text-align : center;
+}
+
+.p{
+  color : black;
+  text-align: center;
+  align-content : center;
+  font-size: 10px;
+}
+
+.ecart{
+  display : flex;
+  margin-top:25%;
+}
+.ecart_texte{
+  display : flex;
+  margin-top : 5%;
+}
+.ecart_fin{
+  display : flex;
+  margin-top:25%;
+}
+
+.content {
+  padding: 10%;
+  margin-top: 10%;
+}
+
+.pixel{
+  display : inline-block;
+  width : 5vw;
+  height : 1vw;
+  margin : 0 10px;
+  vertical-align : text-bottom;
+}
+.centered-image{
+    max-width: 70%;
+    align-content: center;
+}
+
+
+
+/* banniere avec fond photo de groupe */
+.banniere {
+    position: relative;
+    width: 100%;
+    height: 520px; /* Ajustez la hauteur selon vos besoins */
+    background-image: url("../static/img/mandats/mandat 24-25.jpg"); /* Remplacez par le chemin de votre image */
+    background-size: cover;
+    background-position: center 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center 20%;
+    background-color: rgba(0, 0, 0, 0.5); /* Noir semi-transparent pour assombrir */
+    z-index: 1;
+}
+
+.titre-banniere {
+    position: absolute;
+    color: white;
+    font-size: 2.5em; /* Taille du texte */
+    font-weight: bold;
+    text-align: center;
+    z-index: 1;
+    padding: 0 20px;
+}
+
+
+
+/*Réglages pour la page Accueil*/
+.content_accueil{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center; /* Centrer le texte à l'intérieur du conteneur */
+}
+.image_accueil{
+  width: 100vh; /* Taille du container */
+
+  background-image: url("../static/img/fond/logo_marbre_blanc.png"); /*Image de fond*/
+  background-position: center; /* Au centre */
+  background-repeat : no-repeat; /* Pour ne pas que l'image se répète pour combler l'espace */
+  background-size : cover;
+}
+
+
+
+
+/* Réglages pour placer un bouton*/
+.section_creation{
+  background-size : cover;
+  background-attachment: fixed;
+}
+.bouton_clique{
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  color : #fff;
+  /* padding : 15px 30px; */
+  padding : 1% 2% ;
+  border-radius : 10px;
+  border : none;
+  width : 20% ;
+  background : linear-gradient(to left, pink 50%, #2309e6 50%) right;
+  background-size : 200%;
+  transition : background-position 0.5s;
+  font-size : 120%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  align-content : center;
+  margin: 0 auto;
+  text-decoration : none ; /* Supprimes le soulignement par défaut des liens */
+}
+.bouton_clique:hover{
+  background-position: left;
+}
+
+
+
+/* Réglages pour la barre de navigation*/
+
+ /* Style de base pour la barre de navigation */
+        nav {
+            background-color: black;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+        }
+
+        /* Style du logo */
+        .logo {
+            max-width: 4%;
+            max-height: 4%;
+            width: auto;
+            height: auto;
+            margin-left: 10%;
+            transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+        }
+
+        /* Style des éléments de la barre de navigation */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin-left: 20px; /* Espacement entre les liens */
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            transition: filter 0.3s; /* Transition pour le flou */
+        }
+
+        nav ul li a:hover {
+            filter: blur(1px); /* Flou au survol */
+        }
+
+        /* Style pour le sous-menu (menu déroulant) */
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #333;
+            min-width: 150px;
+            z-index: 1;
+        }
+
+        nav ul ul li a {
+            padding: 10px;
+            color: white;
+        }
+
+        nav ul ul li a:hover {
+            background-color: #555;
+        }
+
+        /* Styles pour le menu déroulant */
+ .dropdown-menu {
+    display: none; /* Cacher le menu par défaut */
+    position: absolute;
+    top: 100%; /* Positionner juste en dessous du lien parent */
+    left: 0;
+    background-color: black;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 150px;
+    z-index: 1000;
+    border-radius: 5px;
+}
+
+.dropdown-menu li a {
+    padding: 10px 15px;
+    color: white;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #555;
+}
+
+/* Afficher le menu déroulant au survol */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
+.formulaire-style {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 2px solid #FF69B4; /* Rose vif */
+    border-radius: 10px;
+    background-color: #FFE4E1; /* Rose pâle */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.formulaire-style h2 {
+    text-align: center;
+    color: #333;
+}
+
+.formulaire-style form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulaire-style form input[type="text"],
+.formulaire-style form input[type="date"],
+.formulaire-style form input[type="hour"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.formulaire-style form input[type="submit"] {
+    padding: 10px;
+    background-color: #FF69B4; /* Rose vif */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.formulaire-style form input[type="submit"]:hover {
+    background-color: #FF1493; /* Rose plus foncé */
+}
+
+.formulaire-style form label {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+
+
+
+
+/* 768px */
+
+/* section clubs */
+.section_clubs{
+  text-align : center;
+  outline : none;
+  text-decoration : none ;
+  color: #fff;
+  display: flex;
+  margin-left: 43vh;
+}
+
+.contenant_clubs{
+    position: flex;
+    display: flex;
+    flex-direction : column;
+    text-align : center;
+    align-items : center;
+    margin-right: 2vh;
+    margin-left: 2vh;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+}
+
+.section_clubs p{
+font-size: 3vh;
+width: 40vh;
+color: black;
+}
+
+.contenant_clubs img{
+  position : flex;
+  width : 30vh;
+  height : 30vh;
+  text-decoration : none ;
+  outline : none;
+}
+.contenant_clubs:hover img {
+    transform: scale(1.05);
+}
+
+/* Réglages pour les pages des clubs */
+.content_club{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center; /* Centrer le texte à l'intérieur du conteneur */
+}
+.image_club{
+  width: 100vh; /* Taille du container */
+
+  background-image: url("../static/img/fond/logo_marbre_blanc.png"); /*Image de fond*/
+  background-position: center; /* Au centre */
+  background-repeat : no-repeat; /* Pour ne pas que l'image se répète pour combler l'espace */
+  background-size : cover;
+}
+
+.img_affiche_ski_gauche{
+width: 50vh;
+margin-left: 54vh;
+}
+.img_affiche_ski_droite{
+width: 50vh;
+margin-left: 10vh;
+}
+
+
+
+
+
+
+/* Réglages pour la page Partenaires*/
+.partner-section {
+  background-image: url("../static/img/fond/marbre_blanc.png"); /*Image de fond*/;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  text-align: center;
+  justify-content: space-between;
+}
+
+.partner_img_left {
+  display: flex;  /* Utiliser Flexbox pour aligner les éléments horizontalement */
+  align-items: center;  /* Centrer verticalement les éléments */
+  margin: 20px 0;  /* Espacement entre chaque partenaire */
+  justify-content: space-between;  /* Espace entre l'image et le texte */
+}
+
+.partner_img_right {
+  display: flex;  /* Utiliser Flexbox pour aligner les éléments horizontalement */
+  align-items: center;  /* Centrer verticalement les éléments */
+  margin: 20px 0;  /* Espacement entre chaque partenaire */
+  justify-content: space-between;  /* Espace entre l'image et le texte */
+}
+
+.partner_img_left img {
+  max-width: 300px;  /* Limiter la largeur de l'image */
+  margin-left: 300px;  /* Espace entre l'image et le texte */
+  margin-right: 100px;  /* Espace entre l'image et le texte */
+}
+
+.partner_img_left p {
+  max-width: 600px;  /* Largeur maximale du texte */
+  margin-left: 100px;
+  margin-right: 300px;
+  text-align: justify;  /* Justifier le texte pour un aspect plus propre */
+  font-size: 3vh;
+}
+
+.partner_img_right img {
+  max-width: 300px;  /* Limiter la largeur de l'image */
+  margin-left: 100px;  /* Espace entre l'image et le texte */
+  margin-right: 300px;  /* Espace entre l'image et le texte */
+}
+
+.partner_img_right p {
+  max-width: 600px;  /* Largeur maximale du texte */
+  margin-left: 300px;
+  margin-right: 100px;
+  text-align: justify;  /* Justifier le texte pour un aspect plus propre */
+  font-size: 3vh;
+}
+
+
+
+/*Réglages pour la page Contacts*/
+.section_contact{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30%;
+  margin-top: 5%;
+}
+
+.contenant_contact{
+    position: flex;
+    display: flex;
+    flex-direction : column;
+    text-align : center;
+    align-items : center;
+    margin-right: 10vh;
+    margin-left: 7vh;
+}
+
+.contenant_contact img{
+    width: 20vh;
+    height: auto;
+}
+
+.contenant_contact p{
+    font-size: 3vh;
+    width: 20vh;
+}
+
+
+
+
+/*Réglages pour la section Réseaux sociaux*/
+.section_reseaux{
+  background-color : rgb(62, 62, 62);
+  text-align : center;
+  outline : none;
+  text-decoration : none ;
+}
+
+.insta{
+  position : flex;
+  width : 8vh;
+  height : auto;
+  margin-bottom : 2%;
+  text-decoration : none;
+  outline : none;
+}
+
+.facebook{
+  position : flex;
+  width : 8vh;
+  height : auto;
+  margin-left : 5vw;
+  margin-bottom : 2%;
+  text-decoration : none ;
+  outline : none;
+}
+
+.mail{
+  position : flex;
+  width : 8vh;
+  height : auto;
+  margin-left : 5vw;
+  margin-bottom : 2%;
+  text-decoration : none ;
+  outline : none;
+}
+
+
+
+/* barre en bas */
+
+.section_reseau{
+background-color : rgb(62, 62, 62);
+  text-align : center;
+  outline : none;
+  text-decoration : none ;
+  color: #fff;
+  display: flex;
+}
+.section_reseau h1{
+color: #fff;
+margin-bottom: 60px;
+}
+
+.contenant_reseau{
+    position: flex;
+    display: flex;
+    flex-direction : column;
+    text-align : center;
+    align-items : center;
+    margin-right: 2vh;
+    margin-left: 2vh;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.section_reseau h1{
+font-size: 3vh;
+}

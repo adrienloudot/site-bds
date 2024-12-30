@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title class="”Classe1”">BDS ENPC</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_ordi.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_tel.css') }}">
+    <link rel="icon" href="static/img/logo/logo_BDS_transparent.png">
+  </head>
+
+  <body>
+
+    <div class="formulaire-style">
+        <h2>Bonjour, {{ nom }}, vous venez de terminer votre demande de réservation de van. </h2>
+        
+          {{ msg }}
+        
+                <h3>Remarques : </h3> {{ msg2 }}
+        
+        </div>
+  </body>

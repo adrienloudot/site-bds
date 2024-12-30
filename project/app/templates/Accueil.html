@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title class="”Classe1”">BDS ENPC</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_ordi.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_tel.css') }}">
+    <link rel="icon" href="static/img/logo/logo_BDS_transparent.png">
+  </head>
+
+  <body>
+
+  <!--Barre de navigation-->
+    <nav>
+      <img src="{{ url_for('static', filename='img/logo/logo_BDS_transparent.png') }}" class="logo">
+      <ul>
+        <li><a href="Accueil.html">Accueil</a></li>
+        <li class="dropdown">
+            <a href="/Les sports aux ponts.html" class="dropdown-toggle">Les sports aux ponts</a>
+            <ul class="dropdown-menu">
+                <li><a href="/club/Pompims.html">Pompims</a></li>
+                <li><a href="/club/Rock.html">Rock</a></li>
+                <li><a href="/club/Voile.html">Voile</a></li>
+                <li><a href="/club/Aviron.html">Aviron</a></li>
+                <li><a href="/club/Course.html">Course</a></li>
+                <li><a href="/club/Escalade.html">Escalade</a></li>
+                <li><a href="/club/Micro Aventure.html">Micro Aventure</a></li>
+                <li><a href="/club/Ultra.html">Ultra</a></li>
+                <li><a href="/club/Rugbyx.html">Rugbyx</a></li>
+            </ul>
+          <li><a href="/Van.html">Réservation de van</a></li>  
+          <li><a href="Mandats.html">Mandats</a></li>
+        <li><a href="Partenaires.html">Partenaires</a></li>
+        <li><a href="Contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+
+  <div class="banniere">
+     <div class="overlay"></div>
+    <h1 class="titre-banniere" >Bureau des Sports de l'École Nationale des Ponts et Chaussées</h1>
+
+</div>
+
+
+  <!-- encadré haut de page-->
+<div style="border: 5px solid pink; background color: pink; padding: 10px;  max-width: 800px;margin: auto; text-align: center; margin-top: 5vh">
+  <h1 style="font-size=30%"> Bienvenue sur le site du Bureau des Sports de l'École des Ponts </h1>
+  <p style="font-size=15%"> Les Bureau des Sports veille au bon déroulement du sport interne à l'École, mais organise
+    surtout les évènement sportifs rythmant l'année des étudiants. </p>
+</div>
+
+
+
+  <!-- tout le contenu de la page d'accueil-->
+<div class="content_accueil">
+  <img src="static/img/fond/logo_marbre_blanc.png" alt="Logo" class="centered-image" style="max-width: 100%;"/>
+  <h1> INFOS PRATIQUES</h1>
+    <div style="border: 5px solid pink; background color: pink; padding: 10px;  max-width: 800px;margin: auto; text-align: center; margin-top: 5vh">
+  <h2> Présentation générale </h2>
+  <p> Le sportspectus est distribué à l’ensemble des 1e années lors de leur arrivée sur le campus.
+    Ce document regroupe une grande partie des informations concernant le sport à l’école et la vie associative du Bureau des Sports. </p>
+  <!--Sporspectus-->
+
+      <div class="section_creation">
+        <div style="padding-top : 0%; padding-bottom:0%">
+          <a class="bouton_clique" href="static/Dossiers/Sportspectus 2024.pdf" target="_blank">
+            Sporspectus
+          </a>
+        </div></div>
+    </div>
+
+
+  <h1> La pratique du sport </h1>
+  <p style="margin-bottom: 50px"> La pratique du sport au sein de l’établissement et la participation aux compétitions ne sont possibles
+    que si les étudiants sont munis d’un certificat d’aptitude au sport délivré par leur médecin généraliste. Les élèves peuvent
+    nous envoyer par mail ou nous déposer en version papier le certificat FFSU d’aptitude au sport disponible ci-dessous. </p>
+
+  <p style="margin-bottom: 50px">Pour devenir licencié FFSU, il faut te déclarer au BDS, qui te demandera par la suite :</p>
+
+
+<ul style="list-style-type: none; padding-left: 0; margin-bottom: 50px; margin-left: 50px;">
+    <li style="display: flex; align-items: flex-start;"><span style="width: 15px; text-align: center; margin-right: 5px;"> <p> • </p>
+      </span> <p>Ton formulaire de licence rempli </p> </li>
+    <li style="display: flex; align-items: flex-start;"><span style="width: 15px; text-align: center; margin-right: 5px;"> <p> • </p>
+    </span> <p>Un certificat médical de non contre-indication à la pratique en compétition du sport pratiqué (document ci-dessous)</p></li>
+    <li style="display: flex; align-items: flex-start;"><span style="width: 15px; text-align: center; margin-right: 5px;"> <p> • </p>
+    </span> <p>Une photo de ta carte étudiante</p></li>
+    <li style="display: flex; align-items: flex-start;"><span style="width: 15px; text-align: center; margin-right: 5px;"> <p> • </p>
+    </span> <p>Un chèque de cotisation</p></li>
+</ul>
+
+
+  <p style="margin-bottom=5%">Une licence peut être renouvelée grâce au questionnaire QS sport de la FFSU, comme annexé ci-dessous.  </p>
+  <div class="section_creation">
+  <!--Certificat d'aptitude au sport-->
+        <div style="padding-top : 0%; padding-bottom:0%">
+          <a class="bouton_clique" href="static/Dossiers/Certificat-FFSU.pdf" target="_blank">
+            Certificat d'aptitude au sport
+          </a>
+        </div>
+
+  <!--Questionnaire FFSU-->
+        <div style="padding-top : 2%; padding-bottom:0%">
+          <a class="bouton_clique" href="static/Dossiers/Questionnaire-QS-sport-FFSU.pdf" target="_blank">
+            Questionnaire FFSU
+          </a>
+        </div>
+  </div>
+  <hr class="custom-hr">
+
+
+  <h1> Cotiser et devenir adhérent</h1>
+  <p> Cotiser au BDS revient à reverser une somme de 60 euros à l’association sportive de l’Ecole des Ponts
+    et à signer la charte. Cette cotisation reversée fait de toi un adhérent au Bureau des Sports, te donnant ainsi
+    accès à l’ensemble de nos installations et à l’ensemble du matériel, y compris des vans. Cela te donne également le droit de
+    participer à nos évènements internes et externes. Cette cotisation nous permet de notre côté de subventionner ces mêmes évènements
+    et de débloquer des fonds afin de t’offrir une expérience sportive de folie durant toute une année.</p>
+
+    <p style="margin-top: 50px;">Pour cotiser rien de plus simple : passe au local BDS (v004) avec du cash, un chèque (ordre : AS ENPC) ou un compte Lydia.
+    Tu peux également cotiser depuis chez toi en passant par la cognotte Lydia que voici :   </p>
+
+  <!--Règlement intérieur-->
+      <div class="section_creation">
+        <div style="padding-top : 0%; padding-bottom:0%">
+          <a class="bouton_clique" href="static/Dossiers/Reglement-interieur.pdf" target="_blank">
+            Règlement intérieur
+          </a>
+        </div></div>
+  <!--Cagnotte Lydia-->
+      <div class="section_creation">
+        <div style="padding-top : 2%; padding-bottom:0%">
+          <a class="bouton_clique" href="https://collecte.io/cotisation-bds-2024-2025-7413473/fr" target="_blank">
+            Cagnotte Lydia
+          </a>
+        </div></div>
+  <hr class="custom-hr">
+
+
+  <h1> USAGE DES VANS</h1>
+  <p> Les vans appartiennent au Bureau des Sports. Nous les mettons au services des modulants pour les
+    sports obligatoires ayant lieu loin du campus. Ces trajets sont pris en charge par des étudiants qui doivent au préalable
+    se déclarer conducteurs en signant le contrat conducteur. Les vans peuvent également ponctuellement être prêtés en fonction
+    des disponibilités lorsqu’il s’agit de déplacements de groupes : les demandes se font en complétant le document de contrat de
+    demande exceptionnelle.  </p>
+  <!--Contrat conducteur-->
+
+      <div class="section_creation">
+        <div style="padding-top : 0%; padding-bottom:2%">
+          <a class="bouton_clique" href="static/Dossiers/Contrat_conducteur-24-25.pdf" target="_blank">
+            Contrat conducteur
+          </a>
+        </div></div>
+
+  <img src="static/img/vans/3 vans.jpg" alt="Logo" class="centered-image"/>
+</div>
+
+
+  <!-- mentions légales en bas de page -->
+  <div class="section" style="padding-top : 4%; padding-bottom:0%">
+      <div class="section_reseau">
+       <div class="contenant_reseau" style="width: 40vh; margin-left: 10vh">
+           <h1>Mentions légales</h1>
+           <p>AS DE L ENPC, Association déclarée. 6 Avenue Blaise Pascal - 77420 Champs sur marne.
+           </p>
+       </div>
+
+          <div class="contenant_reseau" style="width: 60vh">
+           <h1>Nos réseaux</h1>
+              <div class="section_reseaux" style="display: flex">
+            <a style="text-decoration : none" href="https://www.instagram.com/bds.enpc/" target="_blank">
+          <img class="insta" src="static/img/Reseaux/InstaB.png">
+           </a>
+
+
+         <a style="text-decoration : none" href="https://www.facebook.com/bds.ecoledesponts" target="_blank">
+          <img class="facebook" src="static/img/Reseaux/FbB.png">
+        </a>
+
+
+        <a style="text-decoration : none" href="mailto:bds.enpc@gmail.com" target="_blank">
+          <img class="mail" src="static/img/Reseaux/mailbb.png">
+          </a>
+
+                  </div>
+       </div>
+
+          <div class="contenant_reseau" style="width: 40vh">
+           <h1>Le bureau des Sports</h1>
+            <p> Les Bureau des Sports veille au bon déroulement du sport interne à l'École, mais organise surtout
+              les évènement sportifs rythmant l'année des étudiants. </p>
+       </div>
+
+          <div class="contenant_reseau">
+           <h1>Liens utiles</h1>
+
+
+              <ul style="list-style-type: none; padding-left: 0; margin-bottom: 50px; margin-left: 50px;">
+    <li style="display: flex; align-items: flex-start;"><span style="width: 15px; text-align: center; margin-right: 5px;">
+    </span> <a href="https://ecoledesponts.fr/" style="color:  red"> École des Ponts </a></li>
+                  <hr>
+    <li style="display: flex; align-items: flex-start;"><span style="width: 15px; text-align: center; margin-right: 5px;">
+    </span> <a href="https://www.fondationdesponts.fr/" style="color:  red"> Fondation des Ponts </a></li>
+                  <hr>
+    <li style="display: flex; align-items: flex-start;"><span style="width: 15px; text-align: center; margin-right: 5px;">
+    </span> <a href="https://www.ponts.org/fr/" style="color:  red"> Ponts Alumni</a></li>
+                  <hr>
+    <li style="display: flex; align-items: flex-start;"><span style="width: 15px; text-align: center; margin-right: 5px;">
+    </span> <a href="https://www.ip-paris.fr/" style="color:  red"> Institut Polytechnique de Paris </a> </li>
+                  <hr>
+    </ul>
+       </div>
+
+          </div>
+    </div>
+
+  <footer>
+    <p>
+
+
+Copyright © 2020 - All Rights Reserved - bds.enpc.org
+
+
+    </p>
+
+  </footer>
+
+  </body>
+</html>
