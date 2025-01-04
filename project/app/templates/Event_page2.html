@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <head>
+  <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="utf-8">
     <title class="”Classe1”">BDS ENPC</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style_ordi.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style_tel.css') }}">
-        <link rel="stylesheet" href="{{ url_for('static', filename='style_club.css') }}">
     <link rel="icon" href="static/img/logo/logo_BDS_transparent.png">
   </head>
-</head>
-<body>
-<!--Barre de navigation-->
+
+  <body>
+
+  <!--Barre de navigation-->
     <nav>
       <img src="{{ url_for('static', filename='img/logo/logo_BDS_transparent.png') }}" class="logo">
       <ul>
@@ -30,130 +29,36 @@
                 <li><a href="/club/Ultra.html">Ultra</a></li>
                 <li><a href="/club/Rugbyx.html">Rugbyx</a></li>
             </ul>
-          <li><a href="/Van.html">Réservation de van</a></li>   
-          <li><a href="/Event.html">Réservation d'event</a></li> 
+          <li><a href="/Van.html">Réservation de van</a></li>
+          <li><a href="/Event.html">Réservation d'event</a></li>
           <li><a href="/Mandats.html">Mandats</a></li>
         <li><a href="/Partenaires.html">Partenaires</a></li>
         <li><a href="/Contacts.html">Contacts</a></li>
       </ul>
     </nav>
 
-
-<div class="banniere">
+  <div class="banniere">
      <div class="overlay"></div>
-    <h1 class="titre-banniere" >Les sports aux ponts</h1>
-</div>
-<div class="encadres_club">
-<p>Aux Ponts, de nombreux sports sont présentés, et chacun doit en choisir un qu'il modulera dans le cadre de sa scolarité.
-    Des compétitions sont également proposées tout au long de l'année, comme la coupe de l'X à Polytechnique,
-le TOSS à Centrale Supélec, le Cartes des Mines ou encore le Challenge Centrale Lyon.</p>
-    </div>
-
-<div class="galerie_club " style="margin-left:37vh;">
-        <img src="/static/img/clubs/photo aviron 2.jpg">
-        <img src="/static/img/clubs/photo handball 1.jpg">
-        <img src="/static/img/clubs/photo basket 1.jpg">
-    </div>
-<div class="galerie_club" style="margin-left:37vh;">
-    <img src="/static/img/clubs/photo course 1.jpg">
-    <img src="/static/img/clubs/photo boxe 1.jpg">
-    <img src="/static/img/clubs/photo rugbyx 1.jpg">
-
-</div>
-
-<div class="encadres_club">
-<p>Votre BDS vous proposera également un weekend ski ainsi que la légendaire semaine ski dont voici quelques affiches : </p>
-    </div>
-
-<div style=" display: flex; margin-top: 5vh">
-    <img src="/static/img/clubs/affiche ski 2024.png" class="img_affiche_ski_gauche">
-    <img src="/static/img/clubs/semaine ski 2025.jpg" class="img_affiche_ski_droite">
-</div>
-
-
-
-<h1 style="position: center; margin-top: 10vh"> PRESENTATION DES CLUBS</h1>
-    <hr class="custom-hr">
-<div class="section_clubs" >
-
-    <div class="contenant_clubs">
-        <a href="/club/Pompims.html">
-            <img src="static/img/clubs/Pompims.jpg" alt="Pompims">
-        </a>
-        <p>Pompims (club de cheer)</p>
-    </div>
-
-     <div class="contenant_clubs">
-        <a href="/club/Rock.html">
-            <img src="static/img/clubs/logo-rock.png" alt="Rock">
-        </a>
-        <p>Club Rock</p>
-    </div>
-
-    <div class="contenant_clubs">
-        <a href="/club/Voile.html">
-            <img src="static/img/clubs/Voile.jpg" alt="Voile">
-        </a>
-        <p>Club Voile</p>
-    </div>
+    <h1 class="titre-banniere" >Bureau des Sports de l'École Nationale des Ponts et Chaussées</h1>
 
 </div>
 
 
-<div class="section_clubs" >
-
-    <div class="contenant_clubs">
-        <a href="/club/Aviron.html">
-          <img  src="static/img/clubs/logo-aviron.png">
-        </a>
-        <p> Club Aviron </p>
-    </div>
-
-    <div class="contenant_clubs">
-        <a href="/club/Course.html">
-          <img  src="static/img/clubs/logo-course.png">
-        </a>
-        <p> Club Course </p>
-    </div>
-
-    <div class="contenant_clubs">
-        <a href="/club/Escalade.html">
-            <img  src="static/img/clubs/logo-escalade.png">
-        </a>
-        <p> Club Escalade </p>
-    </div>
-</div>
-
-<div class="section_clubs" >
-
-    <div class="contenant_clubs">
-        <a href="/club/Micro Aventure.html">
-          <img  src="static/img/clubs/logo micro aventure.jpg">
-        </a>
-        <p> Club Micro Aventure </p>
-    </div>
-
-    <div class="contenant_clubs">
-        <a href="/club/Ultra.html">
-          <img  src="static/img/clubs/logo ultra.jpg">
-        </a>
-        <p> Club Ultra </p>
-    </div>
-
-    <div class="contenant_clubs">
-        <a href="/club/Rugbyx.html">
-            <img  src="static/img/clubs/logo rugbyx.jpg">
-        </a>
-        <p> Club Rugbyx </p>
-    </div>
-</div>
 
 
 
+<div class="formulaire-style">
+  <h2>Bonjour, {{ nom }}, vous venez de terminer votre demande de participtaion à un évènement. </h2>
+  
+    {{ msg }}
+  
+          <h3>Remarques : </h3> {{ msg2 }}
+  </div>
+</body>
 
 
 
-<!-- mentions légales en bas de page -->
+  <!-- mentions légales en bas de page -->
   <div class="section" style="padding-top : 4%; padding-bottom:0%">
       <div class="section_reseau">
        <div class="contenant_reseau" style="width: 40vh; margin-left: 10vh">
@@ -213,9 +118,10 @@ le TOSS à Centrale Supélec, le Cartes des Mines ou encore le Challenge Central
 
   <footer>
     <p>
-        Copyright © 2020 - All Rights Reserved - bds.enpc.org
+Copyright © 2020 - All Rights Reserved - bds.enpc.org
     </p>
 
   </footer>
+
 </body>
 </html>
