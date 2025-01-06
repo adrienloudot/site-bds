@@ -78,3 +78,6 @@ def contacts():
 def home():
     return render_template('Van.html')
 
+@bp.route('/Event.html')  # Définir la route pour Event.html
+def event_page():
+    return render_template('Event.html')
