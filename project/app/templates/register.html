@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>BDS ENPC - Inscription</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_ordi.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_tel.css') }}">
+    <link rel="icon" href="{{ url_for('static', filename='img/logo/logo_BDS_transparent.png') }}">
+  </head>
+
+  <body>
+    <!--Barre de navigation-->
+    <nav>
+      <img src="{{ url_for('static', filename='img/logo/logo_BDS_transparent.png') }}" class="logo">
+      <ul>
+        <li><a href="/Accueil.html">Accueil</a></li>
+        <li class="dropdown">
+          <a href="/Les sports aux ponts.html" class="dropdown-toggle">Les sports aux ponts</a>
+          <ul class="dropdown-menu">
+            <li><a href="/club/Pompims.html">Pompims</a></li>
+            <li><a href="/club/Rock.html">Rock</a></li>
+            <li><a href="/club/Voile.html">Voile</a></li>
+            <li><a href="/club/Aviron.html">Aviron</a></li>
+            <li><a href="/club/Course.html">Course</a></li>
+            <li><a href="/club/Escalade.html">Escalade</a></li>
+            <li><a href="/club/Micro Aventure.html">Micro Aventure</a></li>
+            <li><a href="/club/Ultra.html">Ultra</a></li>
+            <li><a href="/club/Rugbyx.html">Rugbyx</a></li>
+          </ul>
+        </li>
+        <li><a href="/Van.html">Réservation de van</a></li>
+        <li><a href="/Event.html">Réservation d'event</a></li>
+        <li><a href="/Mandats.html">Mandats</a></li>
+        <li><a href="/Partenaires.html">Partenaires</a></li>
+        <li class="dropdown">
+            <a href="/admin/register.html" class="dropdown-toggle">Authentification</a>
+            <ul class="dropdown-menu">
+              <li><a href="/admin/login.html">Connexion</a></li>
+              <li><a href="/admin/register.html">Créer un compte</a></li>
+        <li><a href="/Contacts.html">Contacts</a></li>
+      </ul>
+    </nav>
+
+    <!-- Bannière -->
+    <div class="banniere">
+      <div class="overlay"></div>
+      <h1 class="titre-banniere">Inscription</h1>
+    </div>
+
+    <!-- Formulaire d'inscription -->
+    <div class="formulaire-style">
+      <h2>Créer un compte</h2>
+      {% if error %}
+        <p class="error-message" style="color: red;">{{ error }}</p>
+      {% endif %}
+      {% if success %}
+        <p class="success-message" style="color: green;">{{ success }}</p>
+      {% endif %}
+      <form method="POST" action="/admin/register.html">
+        <div>
+          <label for="email">Email :</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="password">Mot de passe :</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+          <label for="username">Pseudonyme :</label>
+          <input type="username" id="username" name="username" required>
+        </div>
+        <div>
+          <button type="submit">S'inscrire</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Mentions légales -->
+    <div class="section" style="padding-top: 4%; padding-bottom: 0%;">
+      <div class="section_reseau">
+        <div class="contenant_reseau" style="width: 40vh; margin-left: 10vh;">
+          <h1>Mentions légales</h1>
+          <p>
+            AS DE L'ENPC, Association déclarée. 6 Avenue Blaise Pascal - 77420 Champs sur Marne.
+          </p>
+        </div>
+
+        <div class="contenant_reseau" style="width: 60vh;">
+          <h1>Nos réseaux</h1>
+          <div class="section_reseaux" style="display: flex;">
+            <a style="text-decoration: none;" href="https://www.instagram.com/bds.enpc/" target="_blank">
+              <img class="insta" src="{{ url_for('static', filename='img/Reseaux/InstaB.png') }}">
+            </a>
+            <a style="text-decoration: none;" href="https://www.facebook.com/bds.ecoledesponts" target="_blank">
+              <img class="facebook" src="{{ url_for('static', filename='img/Reseaux/FbB.png') }}">
+            </a>
+            <a style="text-decoration: none;" href="mailto:bds.enpc@gmail.com" target="_blank">
+              <img class="mail" src="{{ url_for('static', filename='img/Reseaux/mailbb.png') }}">
+            </a>
+          </div>
+        </div>
+
+        <div class="contenant_reseau" style="width: 40vh;">
+          <h1>Le bureau des Sports</h1>
+          <p>
+            Le Bureau des Sports veille au bon déroulement du sport interne à l'École, mais organise surtout les évènements sportifs rythmant l'année des étudiants.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>Copyright © 2025 - All Rights Reserved - bds.enpc.org</p>
+    </footer>
+  </body>
+</html>
