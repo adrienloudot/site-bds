@@ -1,10 +1,11 @@
 #Routes pour l'interface admin
-from ..models import User
+from ..models import User, ReservationVan, CompetitionSportive
 from flask import Blueprint, request, jsonify, render_template
 from app.extensions import db
 from flask_jwt_extended import create_access_token
 
 bp = Blueprint('admin_routes', __name__, url_prefix='/admin')
+
 
 @bp.route('/')
 def admin_dashboard():
@@ -37,7 +38,7 @@ def register():
 
 
 @bp.route('/login.html', methods=['GET', 'POST'])
-def login():
+def login_dashboard():
     if request.method == 'POST':
         email = request.form.get('email')  # Récupère les données du formulaire
         password = request.form.get('password')
@@ -45,8 +46,20 @@ def login():
         user = User.query.filter_by(email=email).first()
         if user and user.check_password(password):
             # Rediriger vers le tableau de bord ou une autre page en cas de succès
-            users = User.query.all()
-            return render_template('dashboard.html', users=users)
+            résa = ReservationVan.query.filter_by(nom_prenom=email) 
+
+            compet=CompetitionSportive.query.filter_by(nom_prenom=email) 
+            
+            
+
+            #A faire: Afficher les demandes de résa van
+
+
+
+
+            return render_template('dashboard.html', RéservationVans=résa, RéservationEvent=compet)
+        
+
 
         # Afficher un message d'erreur en cas d'échec
         return render_template('login.html', error="Invalid credentials")
