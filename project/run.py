@@ -6,17 +6,18 @@ from flask_mail import Mail, Message    # pip install Flask-Mail
 from app.views.user_routes import bp  # Importer le blueprint
 
 
-
 # Fonction de récupération de la demande de réservation de van
 @bp.route('/Van_page2.html')
 def greet_van():
 
+    #nom= email_glob
     nom = request.args.get('nom', '')
+
     association = request.args.get('association', '')
     date_début = request.args.get('date_début', '')
     date_fin = request.args.get('date_fin', '')
-    heure_début = request.args.get('heure_début', '')
-    heure_fin = request.args.get('heure_fin', '')
+    #heure_début = request.args.get('heure_début', '')
+    #heure_fin = request.args.get('heure_fin', '')
     remarque = request.args.get('remarque', '')
 
     if nom == '':

@@ -51,22 +51,50 @@
     <!-- Contenu principal -->
     <div class="formulaire-style">
       <h2>Bienvenue sur le Dashboard</h2>
-      <p>Voici la liste des utilisateurs enregistrés :</p>
+      <p>Voici la liste des demandes de vans :</p>
 
       <table>
         <thead>
           <tr>
-            <th>ID</th>
-            <th>Email</th>
-            <th>Date de création</th>
+            <th>Date début</th>
+            <th>Date de fin</th>
+            <th>Association</th>
+            <th>Couleur du van</th>
+            <th>Statut</th>
+
           </tr>
         </thead>
         <tbody>
-          {% for user in users %}
+          {% for Résa in RéservationVans %}
             <tr>
-              <td>{{ user.id }}</td>
-              <td>{{ user.email }}</td>
-              <td>{{ user.created_at }}</td>
+              <td>{{ Résa.heure_depart }}</td>
+              <td>{{ Résa.heure_arrivee }}</td>
+              <td>{{ Résa.association }}</td>
+              <td>{{ Résa.couleur_van }}</td>
+              <td>{{ Résa.statut }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+
+      <p>Voici la liste des demandes d'évènements :</p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Evènement</th>
+            <th>Remarque</th>
+            
+
+          </tr>
+        </thead>
+        <tbody>
+          {% for Résa in RéservationEvent %}
+            <tr>
+              <td>{{ Résa.competition }}</td>
+              <td>{{ Résa.remarques}}</td>
+              
             </tr>
           {% endfor %}
         </tbody>
